@@ -1,0 +1,362 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Fuentes */
+@font-face {
+  font-family: party60;
+  src: url(./fonts/party60.ttf);
+}
+
+@font-face {
+  font-family: mortyType;
+  src: url("./Tipografias/get_schwifty.ttf");
+}
+/* Cuerpo Principal */
+
+body {
+  background-image: url(./imagenes/explosion-colores-confeti-sobre-fondo-borroso-decoracion-diseno-salpicaduras-brillantes-brillo.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100%;
+}
+
+body:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: #00000057;
+  opacity: 0.7;
+  box-shadow: inset 0 0 200px rgba(220, 195, 9, 0.5);
+  z-index: -1;
+}
+nav {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Icono_______________ */
+.icon {
+  width: 10%;
+  height: auto;
+  margin-left: 4rem;
+  margin-top: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: moveUpDown 3s ease infinite;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.icon img {
+  width: 10rem;
+  height: auto;
+}
+
+.icon h2 {
+  margin-left: 2rem;
+  font-family: party60;
+  font-size: 2rem;
+  background-image: linear-gradient(
+    45deg,
+    #ff00cc,
+    #ff6600,
+    #ffcc00,
+    #33cc33,
+    #3399ff,
+    #9933cc
+  ); /* Colores brillantes en un degradado diagonal */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: rainbow 5s linear infinite;
+  filter: drop-shadow(15px 10px 4px rgba(0, 0, 0, 0.5));
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(17, 17, 17);
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Titulo principal y secundario y boton ___________________ */
+
+.container {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 9rem;
+}
+
+/* Titulo principal______ */
+
+.tituloPrincipal h1 {
+  font-family: party60;
+  font-size: 8rem;
+  color: rgb(255, 165, 0);
+  text-shadow: 0 0 5px rgba(255, 0, 255, 0.8), 0 0 10px rgba(255, 0, 255, 0.6),
+    0 0 15px rgba(255, 0, 255, 0.4), 0 0 20px rgba(255, 0, 255, 0.2);
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: rgb(255, 0, 0);
+  animation: neonPulse 2s linear infinite;
+  padding: 10px;
+  position: relative;
+  filter: drop-shadow(25px 10px 4px rgba(0, 0, 0, 0.5));
+}
+
+@keyframes neonPulse {
+  0% {
+    color: rgb(255, 165, 0);
+  }
+  50% {
+    color: rgb(255, 255, 0);
+  }
+  100% {
+    color: rgb(255, 165, 0);
+  }
+}
+
+/* Efecto de brillo de las letras utilizando pseudoelementos */
+.tituloPrincipal::after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgba(255, 0, 0, 0.8),
+    rgba(255, 0, 0, 0)
+  );
+  z-index: -1;
+  animation: animacionLetras 2s linear infinite;
+  filter: drop-shadow(25px 10px 4px rgba(0, 0, 0, 0.5));
+}
+
+@keyframes animacionLetras {
+  0% {
+    background-position: -200% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+/* Texto secundario_________ */
+.textoPrincipal2 {
+  /* background-color: #ff00cc45; */
+  width: 69%;
+  font-family: party60;
+  font-size: 3rem;
+  padding: 2rem;
+  border-radius: 4rem;
+  filter: drop-shadow(25px 10px 4px rgba(0, 0, 0, 0.5));
+}
+
+.textoPrincipal2 h3 {
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(18, 17, 17);
+  background-image: linear-gradient(
+    45deg,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: rainbow 5s linear infinite;
+  filter: drop-shadow(25px 10px 4px rgba(0, 0, 0, 0.5));
+}
+
+/* Botón de acceso a formulario */
+
+.botoncete button {
+  font-family: party60;
+  font-size: 50px;
+  color: white5;
+  margin-top: 1rem;
+  width: 35rem;
+  height: 7rem;
+  border-radius: 5rem;
+  background-image: linear-gradient(
+    45deg,
+    #ff00cc,
+    #ff6600,
+    #ffcc00,
+    #33cc33,
+    #3399ff,
+    #9933cc
+  );
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  filter: drop-shadow(25px 10px 4px rgba(0, 0, 0, 0.5));
+  text-decoration: underline;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.5s ease;
+  cursor: pointer;
+}
+
+.botoncete button:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0px 0 5px
+    linear-gradient(45deg, #9933cc, #3399ff, #33cc33, #ffcc00, #ff6600, #ff00cc);
+  animation: parpadeo 1s infinite;
+  background-color: #ff6600;
+  color: white;
+  text-decoration: none;
+}
+
+.botoncete button::after {
+  content: "";
+  background-image: linear-gradient(
+    45deg,
+    #9933cc,
+    #3399ff,
+    #33cc33,
+    #ffcc00,
+    #ff6600,
+    #ff00cc
+  );
+
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(45deg) scale(0, 1);
+  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
+}
+
+.botoncete button:hover::after {
+  transition: all 0.3s ease-out;
+  transform: skewX(45deg) scale(1, 6);
+}
+
+.botoncete button:active {
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: scale(0.99) translateY(8px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Parte 2 del Main Cards ___________ */
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin-top: 3rem;
+}
+
+.titulo-main {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  margin: 2rem;
+  /* margin-left: 3.5rem; */
+}
+
+.titulo-main h2 {
+  font-family: party60;
+  font-size: 4rem;
+  color: rgb(255, 165, 0);
+  text-shadow: 0 0 5px rgba(255, 0, 255, 0.8), 0 0 10px rgba(255, 0, 255, 0.6),
+    0 0 15px rgba(255, 0, 255, 0.4), 0 0 20px rgba(255, 0, 255, 0.2);
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: rgb(255, 0, 0);
+  animation: neonPulse 2s linear infinite;
+  padding: 10px;
+  position: relative;
+  filter: drop-shadow(25px 10px 4px rgba(0, 0, 0, 0.5));
+}
+
+/* Titulo inferior ______________ */
+#titulo{
+  margin-top:-1rem;
+  letter-spacing: 1rem;
+  font-family: party60;
+  font-size: 4rem;
+  color: rgba(238, 255, 0, 0.874);
+  text-shadow: 0 0 5px rgba(0, 255, 128, 0.8), 0 0 10px rgba(0, 17, 255, 0.6),
+    0 0 15px rgba(30, 255, 0, 0.4), 0 0 20px rgba(255, 89, 0, 0.2);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: rgb(14, 13, 13);
+}
+.contacta{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.qr{
+  margin:3rem;
+}
+.qr img{
+  width: 20rem;
+}
+
+/* IOconos redes Sociales */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.social-icon {
+  margin: 0 10px;
+}
+
+.social-icon svg {
+  width: 50px;
+  height: 50px;
+  fill: #333; /* Color predeterminado */
+  transition: fill 0.3s ease;
+}
+
+.social-icon svg:hover {
+  fill: #007bff; /* Cambiar color al pasar el mouse */
+}
