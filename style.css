@@ -14,9 +14,11 @@
   src: url("./Tipografias/get_schwifty.ttf");
 }
 /* Cuerpo Principal */
-
-body {
+html{
   background-image: url(./imagenes/explosion-colores-confeti-sobre-fondo-borroso-decoracion-diseno-salpicaduras-brillantes-brillo.jpg);
+}
+body {
+ 
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
