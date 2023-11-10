@@ -107,14 +107,7 @@ nav {
     background-position: 100% 50%;
   }
 }
-@media only screen and (max-width: 991px){
-  .icon{
-    width: 10rem;
-  }
-  .icon img {
-    width: 7rem;
-  }
-}
+
 /* Titulo principal y secundario y boton ___________________ */
 
 .container {
@@ -127,31 +120,6 @@ nav {
   margin-top: 9rem;
 }
 
-@media only screen and (min-width: 1200px) {
-  .container {
-    margin-top: 6rem;
-  }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .container {
-    margin-top: 7rem;
-  }
-}
-
-
-@media only screen and (max-width: 991px) {
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width:100%;
-    margin-top: 14rem;
-    
-
-  }
-}
 
 
 
@@ -170,11 +138,7 @@ nav {
   position: relative;
   filter: drop-shadow(25px 10px 4px rgba(0, 0, 0, 0.5));
 }
-@media only screen and (max-width: 991px){
-  .tituloPrincipal h1{
-    font-size: 3rem;
-  }
-}
+
 @keyframes neonPulse {
   0% {
     color: rgb(255, 165, 0);
@@ -243,11 +207,7 @@ nav {
   filter: drop-shadow(25px 10px 4px rgba(0, 0, 0, 0.5));
 }
 
-@media only screen and (max-width: 767px) {
-  .textoPrincipal2 p{
-    font-size:4rem;
-  }
-}
+
 
 /* Botón de acceso a formulario */
 
@@ -279,11 +239,7 @@ nav {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 767px){
-  .botoncete{
-    margin-top: 3rem;
-  }
-}
+
 
 .botoncete button:hover {
   transform: scale(1.2);
@@ -343,36 +299,7 @@ nav {
   margin-top: 3rem;
 }
 
-@media only screen and (min-width: 1200px) {
-  .container2 {
-    margin-top: 8rem;
-  }
-}
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .container2 {
-    margin-top: 7rem;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .container2 {
-    margin-top: 8rem;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .container2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width:62rem;
-    margin-top: 14rem;
-   
-
-  }
-}
 
 .titulo-main {
   width: 95%;
@@ -453,12 +380,7 @@ nav {
   margin-bottom: 5rem;
 }
 
-@media only screen and (max-width: 767px){
-  .imagenes{
-    width:62rem;
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
+
 
 .imagenes1,
 .imagenes2,
@@ -486,36 +408,7 @@ nav {
   border-radius: 26px;
   box-shadow: 20px 20px 50px rgba(220, 13, 13, 0.6);
 }
-@media only screen and (min-width: 1200px) {
-  .con3-titulo {
-    margin-top: 6rem;
-  }
-}
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .con3-titulo {
-    margin-top: 7rem;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .con3-titulo {
-    margin-top: 8rem;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .con3-titulo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width:62rem;
-    margin-top: 14rem;
-   
-
-  }
-}
 .imagenes1 p,
 .imagenes2 p,
 .imagenes3 p {
@@ -537,11 +430,7 @@ nav {
   justify-content: center;
 }
 
-@media only screen and (max-width: 767px){
-  .texto-central{
-    width: 64rem;
-  }
-}
+
 .textoseo {
   width: 80%;
   align-items: center;
@@ -558,17 +447,9 @@ nav {
   -webkit-text-stroke-color: rgb(14, 13, 13);
 }
 
-@media only screen and (max-width: 767px){
-  .textoseo p{
-    font-size: 3rem;
-  }
-}
 
-@media only screen and (max-width: 767px){
-  .container3{
-    width: 62rem;
-  }
-}
+
+
 
 .container4 {
   width: 100%;
@@ -581,11 +462,7 @@ nav {
   font-family: party60;
 }
 
-@media only screen and (max-width: 767px){
-  .container4{
-    width: 62rem;
-  }
-}
+
 
 .finalseo {
   width: 90%;
@@ -608,13 +485,7 @@ nav {
   -webkit-text-stroke-color: rgb(14, 13, 13);
 }
 
-@media only screen and (max-width: 767px){
-  .finalseo-titulo{
-    text-align: center;
-   
-  }
-  
-}
+
 
 .listadoseo-cards {
   display: flex;
@@ -622,16 +493,8 @@ nav {
   gap: 2rem;
 }
 
-@media only screen and (max-width: 767px){
-  .listadoseo-cards{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
-    margin-top:2rem;
-    padding: 1rem;
-    margin: 2rem;
-  }
-}
+
+
 .card {
   border: #010810 5px dotted;
   background-color: #0065d1;
@@ -640,12 +503,7 @@ nav {
   min-width: 20rem;
   max-width: 20rem;
 }
-@media only screen and (max-width: 767px){
-  .card{
-    min-width: 28rem;
-    max-width: 28rem;
-  }
-}
+
 
 .card-titulo {
   display: flex;
@@ -683,13 +541,7 @@ nav {
   margin-top: 30px;
   filter: drop-shadow(15px 10px 4px rgba(0, 0, 0, 0.5));
 }
-@media only screen and (max-width: 767px){
-  .tituloFinal{
-    text-align: center;
-    padding: 1.1rem;
-    margin: 1rem;
-  }
-}
+
 
 
 /* Boton es secundarios ____________________________ */
@@ -746,48 +598,9 @@ nav {
 }
 
 
-@media only screen and (min-width: 1200px) {
-  #socialmedianav {
-    margin-left: 50rem;
-    margin-top: 5rem;
-  }
-}
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  #socialmedianav {
-    margin-left: 70rem;
-    margin-top: 4rem;
-  }
-}
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  #socialmedianav {
-    
-    margin-top: 3rem;
-  }
-  .socialmedia-icons2{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .socialmedia-icons2 img{
-    width: 13rem;
-    margin-left: 5rem;
-  }
-}
-@media only screen and (max-width: 767px) {
-  #socialmedianav {
-    
-    margin-top: 2rem;
-  }
-  .socialmedia-icons2{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .socialmedia-icons2 img{
-    width: 3rem;
-    margin-left: 5rem;
-  }
-}
+
 
 /* Footer */
 
@@ -833,8 +646,3 @@ nav {
   font-family: party60;
 }
 
-@media only screen and (max-width: 767px){
-  .myfooter{
-    width: 63rem;
-  }
-}
